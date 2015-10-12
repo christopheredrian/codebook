@@ -8,9 +8,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <style type="text/css">
-    #account{
-        width: 40%;
-        margin: 10px auto;
+    #account-details{
         border: 1px solid #D3D3D3;
         border-radius: 20px;
         padding: 3%;
@@ -21,10 +19,11 @@
         padding: 3%;
     }
 </style>
-<div id="account">
-    <form>
+<div class="container">
+    <div id="account-details" class="col-md-6">
+        <form>
         <fieldset>
-            <legend>Account Settings</legend>
+            <legend><h3>Account Settings</h3></legend>
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="text" class="form-control" id="name" value="Mike Smith" />
@@ -39,7 +38,7 @@
                 <input type="password" class="form-control" id="password" />
             </div>
             <div class="form-group">
-                <label for="confirm-password">Password</label>
+                <label for="confirm-password">Re-Enter Password</label>
                 <input type="password" class="form-control" id="confirm-password" />
             </div>
             <hr>
@@ -54,6 +53,31 @@
             <button type="submit" class="btn btn-info">Submit</button>
         </fieldset>
     </form>
+    </div>
+    <div class="col-md-6">
+        <h3>Authentications</h3>
+        <hr>
+        <div class="form-group">
+            <label for="googleplus">Google+</label>
+            <input type="url" class="form-control" id="googleplus" placeholder="https://plus.google.com/+myusername/">
+            <!--TODO: Validation here -->
+        </div>
+        <div class="form-group">
+            <label for="facebook">Facebook+</label>
+            <input type="url" class="form-control" id="facebook" placeholder="https://www.facebook.com/myusername">
+            <!--TODO: Validation here -->
+        </div>
+        <div class="form-group">
+            <label for="twitter">Twitter</label>
+            <input type="url" class="form-control" id="twitter" placeholder="https://twitter.com/myuserid">
+            <!--TODO: Validation here -->
+        </div>
+        <div class="form-group">
+            <label for="github">Github</label>
+            <input type="url" class="form-control" id="github" placeholder="https://github.com/myusername">
+            <!--TODO: Validation here -->
+        </div>
+    </div>
 
 
 </div>
